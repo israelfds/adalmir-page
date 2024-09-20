@@ -1,0 +1,30 @@
+.header {
+    width: 1200px; /* Largura padrão para telas grandes */
+    height: 666px; /* Altura fixa para evitar que desapareça */
+    background-size: contain; /* Ajusta a imagem dentro do container */
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 30px;
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: calc(100% - 0px); /* Ajusta a largura para 100% menos margem */
+        height: 400px; /* Altura mínima */
+        background-size: contain; /* Mantém a imagem proporcional */
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        width: calc(100% - 0px); /* Ajusta a largura para 100% menos margem */
+        height: 200px; /* Altura mínima */
+        background-size: cover; /* Faz a imagem cobrir todo o container */
+        
+    }
+}

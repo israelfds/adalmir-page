@@ -1,0 +1,88 @@
+.image-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-images {
+  display: flex;
+  justify-content: center;
+  width: 80%; /* Ajuste conforme necessário */
+  overflow: hidden; /* Esconde imagens que estão fora do limite */
+}
+
+.slider-image {
+  width: 30%; /* Para telas maiores */
+  margin: 0 10px; /* Espaço entre as imagens */
+  transition: transform 0.3s ease;
+}
+
+.slider-image:hover {
+  transform: scale(1.05); /* Efeito de destaque ao passar o mouse */
+}
+
+.slider-button {
+  background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com opacidade */
+  border: none;
+  padding: 15px 20px; /* Aumenta o tamanho dos botões */
+  font-size: 1.5em; /* Tamanho da fonte maior */
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px; /* Espaçamento entre botões e imagens */
+  transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+.slider-button:hover {
+  background-color: rgba(255, 255, 255, 1); /* Muda a cor de fundo ao passar o mouse */
+  transform: scale(1.05); /* Efeito de aumentar ao passar o mouse */
+}
+
+/* Estilos da modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro com opacidade */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%; /* Limita a largura da imagem */
+  max-height: 90%; /* Limita a altura da imagem */
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .slider-images {
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-image {
+    width: 100%; /* A imagem vai ocupar toda a largura da tela no mobile */
+    margin: 0; /* Remove o espaço entre as imagens */
+  }
+}
+

@@ -1,0 +1,154 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Fundo claro */
+  color: #333; /* Texto em um tom escuro */
+}
+
+.home {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  color: #007bff; /* Azul claro */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+section {
+  background-color: #ffffff; /* Fundo branco para seções */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555; /* Texto em um tom cinza */
+}
+
+/* Estilos para a imagem circular e layout */
+.story-container {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o texto verticalmente */
+  margin-bottom: 20px; /* Espaçamento entre seções */
+}
+
+.home-image {
+  width: 300px; /* Tamanho fixo da imagem */
+  max-width: 100%; /* Imagem não ultrapassa a largura do contêiner */
+  height: 300px; /* Altura fixa para cortar a imagem em cima e embaixo */
+  object-fit: cover; /* Faz a imagem cobrir o espaço definido, cortando os excessos */
+  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.story-text {
+  flex: 1; /* Permite que o texto ocupe o restante do espaço */
+}
+
+.story-text h2 {
+  margin: 0 0 10px 0; /* Espaçamento abaixo do título */
+}
+
+.story-text p {
+  margin: 0; /* Remove o espaçamento padrão do parágrafo */
+}
+
+/* Estilos para botões e interações */
+.button {
+  background-color: #007bff; /* Azul claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: auto; /* Ajuste automático para botões */
+}
+
+.button:hover {
+  background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .home {
+    padding: 10px; /* Menos padding em telas menores */
+  }
+
+  h1 {
+    font-size: 2rem; /* Tamanho menor para h1 */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Tamanho menor para h2 */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* Tamanho menor para h3 */
+  }
+
+  section {
+    padding: 15px; /* Menos padding nas seções */
+  }
+
+  p {
+    font-size: 0.95rem; /* Texto um pouco menor */
+  }
+
+  .story-container {
+    flex-direction: column; /* Coloca a imagem acima do texto */
+    align-items: center; /* Centraliza os itens */
+  }
+
+  .home-image {
+    margin-right: 0; /* Remove o espaçamento lateral */
+    margin-bottom: 10px; /* Adiciona espaço abaixo da imagem */
+  }
+
+  .button {
+    width: 100%; /* Botão ocupa a largura total */
+    padding: 12px; /* Mais padding para facilitar o toque */
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem; /* Tamanho ainda menor para h1 */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Tamanho ainda menor para h2 */
+  }
+
+  h3 {
+    font-size: 1rem; /* Tamanho ainda menor para h3 */
+  }
+
+  p {
+    font-size: 0.85rem; /* Texto um pouco menor */
+  }
+
+  section {
+    margin-bottom: 10px; /* Menos espaço entre seções */
+  }
+}
